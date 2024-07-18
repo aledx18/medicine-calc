@@ -40,7 +40,7 @@ export default function PatientForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const result = parseInt(values.dosisMg) / parseInt(values.pacientKg)
+    const result = parseFloat(values.dosisMg) * parseFloat(values.pacientKg)
     const presentacionMg = parseFloat(values.presentacionMg)
     const presentacionMl = parseFloat(values.presentacionMl)
 
