@@ -58,6 +58,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             <Input
               placeholder={props.placeholder}
               {...field}
+              type='number'
               className='border-0'
             />
           </FormControl>
